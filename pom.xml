@@ -66,5 +66,5 @@
         <altDeploymentRepository>id::default::file:target/deploy</altDeploymentRepository>
       </properties>
     </profile>
-  <profiles>
+  </profiles>
 </project>
