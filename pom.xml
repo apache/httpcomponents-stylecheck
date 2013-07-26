@@ -34,7 +34,8 @@
   <groupId>org.apache.httpcomponents</groupId>
   <artifactId>hc-stylecheck</artifactId>
   <version>2-SNAPSHOT</version>
-  <description>Shared stylecheck plugin configuration for HC projects</description>
+  <name>Apache HttpComponents Stylecheck Plugin Configuration</name>
+  <description>Shared stylecheck plugin configuration for Apache HttpComponents projects</description>
   <packaging>jar</packaging>
 
   <organization>
