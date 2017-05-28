@@ -29,7 +29,7 @@
   <parent>
     <groupId>org.apache</groupId>
     <artifactId>apache</artifactId>
-    <version>13</version>
+    <version>18</version>
   </parent>
   <groupId>org.apache.httpcomponents</groupId>
   <artifactId>hc-stylecheck</artifactId>
@@ -44,9 +44,10 @@
   </organization>
 
   <scm>
-    <connection>scm:svn:http://svn.apache.org/repos/asf/httpcomponents/hc-stylecheck/trunk</connection>
-    <developerConnection>scm:svn:https://svn.apache.org/repos/asf/httpcomponents/hc-stylecheck/trunk</developerConnection>
-    <url>http://svn.apache.org/repos/asf/httpcomponents/hc-stylecheck/trunk</url>
+    <connection>scm:git:https://git-wip-us.apache.org/repos/asf/httpcomponents-stylecheck.git</connection>
+    <developerConnection>scm:git:https://git-wip-us.apache.org/repos/asf/httpcomponents-stylecheck.git</developerConnection>
+    <url>https://github.com/apache/httpcomponents-stylecheck/tree/${project.scm.tag}</url>
+    <tag>master</tag>
   </scm>
 
   <profiles>
