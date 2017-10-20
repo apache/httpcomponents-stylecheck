@@ -33,6 +33,7 @@
   </module>
   <module name="Header">
     <property name="headerFile" value="${checkstyle.header.file}" />
+    <property name="fileExtensions" value="java"/>
   </module>
   <module name="FileTabCharacter">
     <property name="eachLine" value="true"/>
