@@ -29,7 +29,13 @@
     <module name="UnusedImports"/>
     <module name="EqualsHashCode"/>
     <module name="FinalParameters"/>
-    <module name="FinalLocalVariable"/>
+    <module name="FinalLocalVariable">
+      <property name="tokens" value="VARIABLE_DEF, PARAMETER_DEF"/>
+      <property name="validateEnhancedForLoopVariable" value="true"/>
+    </module>
+    <module name="MissingDeprecated"/>
+    <module name="MissingOverride"/>
+    <module name="EmptyStatement"/>
   </module>
   <module name="Header">
     <property name="headerFile" value="${checkstyle.header.file}" />
