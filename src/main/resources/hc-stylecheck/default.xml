@@ -27,6 +27,13 @@ Version 3 - changes since 2
 =====================================
 
 Added org.apache.hc.stylecheck.TestCaseMethodVisibilityCheck
+Added EmptyCatchBlockCheck
+Added DefaultComesLastCheck
+Added UnnecessaryParenthesesCheck
+Added UnusedLocalVariableCheck
+Added GenericWhitespaceCheck
+Added SingleSpaceSeparatorCheck
+Added WhitespaceAroundCheck
 
 -->
 
@@ -46,6 +53,17 @@ Added org.apache.hc.stylecheck.TestCaseMethodVisibilityCheck
     <module name="MissingOverride"/>
     <module name="EmptyStatement"/>
     <module name="org.apache.hc.stylecheck.TestCaseMethodVisibilityCheck"/>
+    <module name="EmptyCatchBlockCheck">
+      <property name="exceptionVariableName" value="^(expected|ignore|ignored)$"/>
+    </module>
+    <module name="DefaultComesLastCheck"/>
+    <module name="UnnecessaryParenthesesCheck"/>
+    <module name="UnusedLocalVariableCheck"/>
+    <module name="GenericWhitespaceCheck"/>
+    <module name="SingleSpaceSeparatorCheck"/>
+    <module name="WhitespaceAroundCheck">
+      <property name="ignoreEnhancedForColon" value="true"/>
+    </module>
   </module>
   <module name="Header">
     <property name="headerFile" value="${checkstyle.header.file}" />
