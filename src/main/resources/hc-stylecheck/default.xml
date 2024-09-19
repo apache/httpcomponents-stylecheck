@@ -21,6 +21,15 @@
     "-//Puppy Crawl//DTD Check Configuration 1.2//EN"
     "http://www.puppycrawl.com/dtds/configuration_1_2.dtd">
 
+<!--
+
+Version 3 - changes since 2
+=====================================
+
+Added org.apache.hc.stylecheck.TestCaseMethodVisibilityCheck
+
+-->
+
 <module name="Checker">
   <module name="TreeWalker">
     <module name="AvoidStarImport"/>
@@ -36,6 +45,7 @@
     <module name="MissingDeprecated"/>
     <module name="MissingOverride"/>
     <module name="EmptyStatement"/>
+    <module name="org.apache.hc.stylecheck.TestCaseMethodVisibilityCheck"/>
   </module>
   <module name="Header">
     <property name="headerFile" value="${checkstyle.header.file}" />

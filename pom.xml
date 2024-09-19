@@ -38,17 +38,57 @@
   <description>Shared stylecheck plugin configuration for Apache HttpComponents projects</description>
   <packaging>jar</packaging>
 
-  <organization>
-    <name>The Apache Software Foundation</name>
-    <url>http://www.apache.org/</url>
-  </organization>
+    <organization>
+      <name>The Apache Software Foundation</name>
+      <url>http://www.apache.org/</url>
+    </organization>
 
-  <scm>
-    <connection>scm:git:https://git-wip-us.apache.org/repos/asf/httpcomponents-stylecheck.git</connection>
-    <developerConnection>scm:git:https://git-wip-us.apache.org/repos/asf/httpcomponents-stylecheck.git</developerConnection>
-    <url>https://github.com/apache/httpcomponents-stylecheck/tree/${project.scm.tag}</url>
-    <tag>master</tag>
-  </scm>
+    <scm>
+      <connection>scm:git:https://git-wip-us.apache.org/repos/asf/httpcomponents-stylecheck.git</connection>
+      <developerConnection>scm:git:https://git-wip-us.apache.org/repos/asf/httpcomponents-stylecheck.git</developerConnection>
+      <url>https://github.com/apache/httpcomponents-stylecheck/tree/${project.scm.tag}</url>
+      <tag>master</tag>
+    </scm>
+
+    <properties>
+      <maven.compiler.source>1.8</maven.compiler.source>
+      <maven.compiler.target>1.8</maven.compiler.target>
+      <maven.compiler.showDeprecation>true</maven.compiler.showDeprecation>
+      <checkstyle.version>9.3</checkstyle.version>
+    </properties>
+
+    <dependencyManagement>
+      <dependencies>
+        <dependency>
+          <groupId>com.puppycrawl.tools</groupId>
+          <artifactId>checkstyle</artifactId>
+          <version>${checkstyle.version}</version>
+        </dependency>
+      </dependencies>
+    </dependencyManagement>
+
+    <dependencies>
+      <dependency>
+        <groupId>com.puppycrawl.tools</groupId>
+        <artifactId>checkstyle</artifactId>
+      </dependency>
+    </dependencies>
+
+    <build>
+      <pluginManagement>
+        <plugins>
+          <!-- org.apache.maven.plugins, alpha order by artifact id -->
+        <plugin>
+          <groupId>org.apache.maven.plugins</groupId>
+          <artifactId>maven-compiler-plugin</artifactId>
+          <configuration>
+            <source>${maven.compiler.source}</source>
+            <target>${maven.compiler.target}</target>
+          </configuration>
+        </plugin>
+      </plugins>
+    </pluginManagement>
+  </build>
 
   <profiles>
     <profile>
