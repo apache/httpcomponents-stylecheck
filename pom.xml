@@ -33,7 +33,7 @@
   </parent>
   <groupId>org.apache.httpcomponents</groupId>
   <artifactId>hc-stylecheck</artifactId>
-  <version>3-SNAPSHOT</version>
+  <version>3</version>
   <name>Apache HttpComponents Stylecheck Plugin Configuration</name>
   <description>Shared stylecheck plugin configuration for Apache HttpComponents projects</description>
   <packaging>jar</packaging>
